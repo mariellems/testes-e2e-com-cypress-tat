@@ -3,6 +3,7 @@
     "defaultCommandTimeout": 25000,
     "requestTimeout": 10000,
     "chromeWebSecurity": false,
+    "projectId": "7wm2po",
     "experimentalStudio": true,
     "experimentalSessionSupport": true,
     "env": {
