@@ -1,6 +1,6 @@
-require("cypress-grep")();
+require('cypress-grep')()
 
-import "cypress-mailosaur";
-import "cypress-file-upload";
-import "cypress-iframe";
-import "./commands";
+import 'cypress-mailosaur'
+import 'cypress-file-upload'
+import 'cypress-iframe'
+import './commands'
