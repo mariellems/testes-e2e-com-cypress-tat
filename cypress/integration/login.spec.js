@@ -1,12 +1,11 @@
-it('successfully logs in', () => {
-  cy.intercept('GET', '**/notes').as('getNotes')
+/// <reference path="../support/commands.d.ts" />
 
-  cy.login(
-    Cypress.env('USER_EMAIL'),
-    Cypress.env('USER_PASSWORD'),
-    { cacheSession: false }
-  )
+it("successfully logs in", () => {
+  cy.intercept("GET", "**/notes").as("getNotes");
 
-  cy.wait('@getNotes')
-})
+  cy.login(Cypress.env("USER_EMAIL"), Cypress.env("USER_PASSWORD"), {
+    cacheSession: false,
+  });
 
+  cy.wait("@getNotes");
+});
